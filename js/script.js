@@ -22,7 +22,9 @@ $greeting.text('So, you want to live at ' + address + '?');
 var streetviewUrl = 'http://maps.googleapis.com/maps/api/streetview?size=600x300&location=' + address + '';
 $body.append('<img class="bgimg" src="' + streetviewUrl + '" >');
     // YOUR CODE GOES HERE!
-
+$.getJSON(URL, function (data) {
+  console.log(data);
+});
     return false;
 };
 
